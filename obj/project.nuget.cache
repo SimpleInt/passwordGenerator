@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "F87WCe8Iabych0zAZiZAvaXJkHegpZ9wu3vtLCe5HXt8xgR6rk+QuL16va6eOpLKOTKvUNjJbznrCdDmTpfYtg==",
+  "success": true,
+  "projectFilePath": "E:\\Portafolio per age\\15y\\C#\\PassWordGenerator\\PassWordGenerator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\OwOr\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\OwOr\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\OwOr\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

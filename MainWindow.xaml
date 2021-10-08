@@ -1,0 +1,45 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	x:Class="PassWordGenerator.MainWindow"
+		mc:Ignorable="d"
+        Title="Password Generator" Height="600" Width="800" MinHeight="600" MinWidth="800" Icon="/logo.jpg">
+
+	<Grid>
+		<!--#region DEFINITIONS FOR COLUMS AND ROWS-->
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition/>
+			<ColumnDefinition x:Name="Checking"/>
+		</Grid.ColumnDefinitions>
+
+		<Grid.RowDefinitions>
+			<RowDefinition/>
+			<RowDefinition/>
+			<RowDefinition/>
+			<RowDefinition/>
+		</Grid.RowDefinitions>
+		<!--#end-region-->
+		<StackPanel Grid.Column="0" Grid.Row="1">
+			<CheckBox x:Name="checkSym" Content="Include Symbols (e.g: @#$%)" FontSize="16"/>
+			<CheckBox x:Name="checkNums" Content="Include Numbers (e.g: 123456789)" FontSize="16"/>
+			<CheckBox x:Name="checkLow" Content="Include LowerCase (e.g: abcdefghij...)" FontSize="16"/>
+			<CheckBox x:Name="checkUpp" Content="Include Uppercase (e.g: ABCDEFGHIJ...)" FontSize="16"/>
+			<CheckBox x:Name="checkAmb" Content="Include Ambiguous (e.g: { } [ ] &lt; &gt; / \...)" FontSize="16"/>
+			<CheckBox x:Name="checkPer" Content="Save my preferences (the configuration &#xA;file path is editable, too)" FontSize="16"/>
+		</StackPanel>
+
+		<Button x:Name="btnReadConfig" Content="Create new password" Grid.Row="2" FontSize="38" Click="btnReadConfig_Click"/>
+		<PasswordBox x:Name="passwordBox" Grid.Column="1" HorizontalAlignment="Stretch"  Grid.Row="2" VerticalAlignment="Top" FontSize="48"/>
+		<Button x:Name="button" Content="CheckPassword" Grid.Column="1" HorizontalAlignment="Stretch"  Grid.Row="2" VerticalAlignment="Bottom" FontSize="48" FontStyle="Italic" FontWeight="Normal" Click="button_Click"  />
+		<Label x:Name="label" Content="THE PASSWORD IS" Grid.Column="1" HorizontalAlignment="Center"  Grid.Row="3" FontSize="40"/>
+		<Label x:Name="checkPS" Content="debug" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Grid.Row="3" FontSize="48" FontStyle="Italic" Foreground="Red"/>
+		<Label x:Name="label1" Content="The new password is" Grid.Row="3" Grid.Column="0" FontSize="36" VerticalAlignment="Top" FontWeight="Normal" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" Background="White"/>
+		<TextBox x:Name="textBox" HorizontalAlignment="Left" Grid.Row="3" Text="" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="300" Height="75" FontSize="28" IsEnabled="False"/>
+		<Button x:Name="button1" Content="Copy" HorizontalAlignment="Right" VerticalAlignment="Bottom"  Grid.Row="3" Height="75" Width="100" FontSize="36" Click="button1_Click"/>
+		<Label x:Name="label2" Content="PASSWORD GENERATOR" HorizontalAlignment="Stretch"  VerticalAlignment="Top" Grid.Row="0" FontSize="16"/>
+		<Label x:Name="label3" Content="LENGHT THE PASSWORD"  VerticalAlignment="Center" FontSize="16" />
+		<TextBox x:Name="txtLENGHT" HorizontalAlignment="Right" Grid.Row="0" TextWrapping="Wrap" VerticalAlignment="Center" Text="15" FontSize="45"/>
+	</Grid>
+</Window>
